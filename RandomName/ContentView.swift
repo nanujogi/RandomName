@@ -11,27 +11,30 @@ struct ContentView: View {
     @ObservedObject var viewmodel = ViewModel()
     
     var body: some View {
-        VStack {
-            List {
-                ForEach(viewmodel.namesLoaded, id:\.id) { names in
-                    Text("\(names.name)")
-                        .font(.body)
-                        .foregroundColor(.blue)
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(viewmodel.namesLoaded, id:\.id) { names in
+                        Text("\(names.name)")
+                            .font(.body)
+                            .foregroundColor(.blue)
+                    }
                 }
-            }
-            .padding()
-            HStack {
-                Button("Search Lucky") {
-                    viewmodel.selectLucky()
-                    
-                }
-                .buttonStyle(BlueButton())
                 
-                Button("Winners") {
-                    viewmodel.printLucky()
+                HStack {
+                    Button("Search Lucky") {
+                        viewmodel.selectLucky()
+                        
+                    }
+                    .buttonStyle(BlueButton())
+                    
+                    Button("Winners") {
+                        viewmodel.printLucky()
+                    }
+                    .buttonStyle(BlueButton())
                 }
-                .buttonStyle(BlueButton())
             }
+            .navigationBarTitle("Participants", displayMode: .inline)
         }
     }
 }
