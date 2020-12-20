@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E520696C258F36DA00421496 /* ViewsUsefulStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E520696B258F36D800421496 /* ViewsUsefulStructs.swift */; };
 		E5259901258CB720002CB7A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5259900258CB720002CB7A0 /* AppDelegate.swift */; };
 		E5259903258CB720002CB7A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5259902258CB720002CB7A0 /* SceneDelegate.swift */; };
 		E5259905258CB720002CB7A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5259904258CB720002CB7A0 /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E520696B258F36D800421496 /* ViewsUsefulStructs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewsUsefulStructs.swift; sourceTree = "<group>"; };
 		E52598FD258CB71F002CB7A0 /* RandomName.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomName.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5259900258CB720002CB7A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5259902258CB720002CB7A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				E5259915258CBB71002CB7A0 /* model.swift */,
 				E5259900258CB720002CB7A0 /* AppDelegate.swift */,
 				E5259902258CB720002CB7A0 /* SceneDelegate.swift */,
+				E520696B258F36D800421496 /* ViewsUsefulStructs.swift */,
 				E5259904258CB720002CB7A0 /* ContentView.swift */,
 				E5259925258CCB19002CB7A0 /* ContentViewModel.swift */,
 				E5259924258CCA28002CB7A0 /* Bundle-Decodable.swift */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5259901258CB720002CB7A0 /* AppDelegate.swift in Sources */,
+				E520696C258F36DA00421496 /* ViewsUsefulStructs.swift in Sources */,
 				E5259903258CB720002CB7A0 /* SceneDelegate.swift in Sources */,
 				E5259926258CCB19002CB7A0 /* ContentViewModel.swift in Sources */,
 				E5259916258CBB72002CB7A0 /* model.swift in Sources */,

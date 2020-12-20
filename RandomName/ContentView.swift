@@ -15,17 +15,22 @@ struct ContentView: View {
             List {
                 ForEach(viewmodel.namesLoaded, id:\.id) { names in
                     Text("\(names.name)")
-                        .font(.caption)
+                        .font(.body)
                         .foregroundColor(.blue)
                 }
             }
-            Button("Search Lucky") {
-                viewmodel.selectLucky()
+            .padding()
+            HStack {
+                Button("Search Lucky") {
+                    viewmodel.selectLucky()
+                    
+                }
+                .buttonStyle(BlueButton())
                 
-            }
-            
-            Button("Winners") {
-                viewmodel.printLucky()
+                Button("Winners") {
+                    viewmodel.printLucky()
+                }
+                .buttonStyle(BlueButton())
             }
         }
     }
